@@ -212,33 +212,34 @@ Dựa vào type trả về của API để đặt tên cho model. Ví dụ: User
 >
 
       lib
-      ├── app
-      ├── common
-      │   ├── config
-      │   ├── constant                                  # Biến dùng chung
-      │   ├── model                                     # Model của toàn bộ app
-      │   ├── preference                                # Function shared_preference
-      │   ├── route                                     # Route cho toàn bộ app
-      │   ├── util                                      # Các Function sử dụng lại
-      │   └── widget                                    # Định nghĩa các widget chung
-      ├── feature                                       # Danh sách các tính năng của app
-      │   ├── login
-      │   │   ├── data
-      │   │   │   ├── data_sources
-      │   │   │   ├── repository                        # Implement Repository
-      │   │   │   ├── model
-      │   │   ├── domain
-      │   │   │   ├── usecases
-      │   │   │   ├── repository                        # abstract class Repository
-      │   │   ├── presentation
-      │   │   │   ├── bloc                              # Bloc của tính năng (nhiều bloc khác nhau)
-      │   │   │   │   ├── export.dart                   # Export chung của Bloc
-      │   │   │   │   ├── login_bloc.dart               # Bloc xử lý của login feature
-      │   │   │   │   ├── login_event.dart              # Event Bloc của login feature
-      │   │   │   │   ├── login_state.dart              # State Bloc của login feature
-      │   │   │   ├── screen
-      │   │   │   │   ├── login_screen.dart 
-      │   │   │   │   ├── widget
-      │   │   │   │   │   ├── button_login_widget.dart  # Widget của screen login
-      │   └── ...
-      └── translations                                  # Cấu hình đa ngôn ngữ
+  ├── app
+  ├── common
+  │   ├── config
+  │   ├── constant                                  # Variables compartidas
+  │   ├── model                                     # Modelos de toda la aplicación
+  │   ├── preference                                # Funciones de shared_preference
+  │   ├── route                                     # Rutas para toda la aplicación
+  │   ├── util                                      # Funciones reutilizables
+  │   └── widget                                    # Definición de widgets compartidos
+  ├── feature                                       # Lista de funcionalidades de la aplicación
+  │   ├── login
+  │   │   ├── data
+  │   │   │   ├── data_sources
+  │   │   │   ├── repository                        # Implementación del repositorio
+  │   │   │   ├── model
+  │   │   ├── domain
+  │   │   │   ├── usecases
+  │   │   │   ├── repository                        # Clase abstracta del repositorio
+  │   │   ├── presentation
+  │   │   │   ├── bloc                              # Bloc de la funcionalidad (varios blocs diferentes)
+  │   │   │   │   ├── export.dart                   # Exportación compartida del Bloc
+  │   │   │   │   ├── login_bloc.dart               # Bloc que maneja la funcionalidad de inicio de sesión
+  │   │   │   │   ├── login_event.dart              # Eventos del Bloc para la funcionalidad de inicio de sesión
+  │   │   │   │   ├── login_state.dart              # Estados del Bloc para la funcionalidad de inicio de sesión
+  │   │   │   ├── screen
+  │   │   │   │   ├── login_screen.dart 
+  │   │   │   │   ├── widget
+  │   │   │   │   │   ├── button_login_widget.dart  # Widget de la pantalla de inicio de sesión
+  │   └── ...
+  └── translations                                  # Configuración multilingüe
+
