@@ -210,7 +210,6 @@ Dựa vào type trả về của API để đặt tên cho model. Ví dụ: User
 ## Cấu trúc source
 
 >
-
       lib
   ├── app
   ├── common
