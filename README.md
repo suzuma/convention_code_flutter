@@ -131,15 +131,16 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   }
 }
 ````
-### Tầng Domain
-Ở tầng Domain này chúng ta sẽ có: 
+### Capa de Dominio
 
-- Triển khai use cases
-- Triển khai interface repositories
+En esta capa de Dominio, tendremos lo siguiente:
 
-**Use case**: Tùy vào tính năng để có thể triển khai use case hay không.
+    Implementación de casos de uso
+    Implementación de interfaces de repositorios
 
-Ví dụ: Minh họa cho tác dụng của use cases là có logic logout tài khoản, ở đây phải thực hiện các công việc như: Xóa các thông tin lưu trữ về người dùng và hủy đăng ký fcm. Và trong ứng dụng có 2 nơi có thể bấm logout để thoát đăng nhập: 1 là ở trang profile, 2 là ở trang chủ cũng có nút cho phép logout. Nếu gặp phải trường hợp như này sẽ đơn giản khi có thể tái sử dụng 1 hàm xử lý LogoutUseCases duy nhất.Một UseCases luôn được định nghĩa rõ ràng đầu vào và đầu ra, chính vì thế nó cũng rất dễ dàng để có thể kiểm thử tại đây.
+Caso de uso: Dependiendo de la funcionalidad, se puede implementar o no un caso de uso.
+
+Ejemplo: Para ilustrar la utilidad de los casos de uso, consideremos la lógica de cierre de sesión de una cuenta. Aquí, se deben realizar tareas como eliminar la información almacenada del usuario y cancelar la suscripción a FCM (Firebase Cloud Messaging). En la aplicación, hay dos lugares donde se puede hacer clic para cerrar sesión: uno en la página de perfil y otro en la página de inicio, que también tiene un botón para cerrar sesión. En situaciones como esta, es simple reutilizar una única función de manejo de casos de uso de cierre de sesión (LogoutUseCases). Un caso de uso siempre define claramente las entradas y salidas, lo que facilita su prueba en esta etapa.
 
 ![image](https://github.com/user-attachments/assets/bfda5115-7f4e-4c52-980b-b16b193023f6)
 
